@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <div>
       <div>
-        You are {name}, Your email is {email}{" "}
+        You are {name}, Your email is {email},updated
       </div>
     </div>
   );
