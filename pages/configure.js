@@ -8,8 +8,8 @@ export default function Configure() {
       microsoftTeams.settings.setValidityState(true);
       microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
         microsoftTeams.settings.setSettings({
-          websiteUrl: "https://48c4ed03f874.ngrok.io ",
-          contentUrl: "https://48c4ed03f874.ngrok.io ",
+          websiteUrl: "https://sso-next-js-amber.vercel.app/",
+          contentUrl: "https://sso-next-js-amber.vercel.app/",
           entityId: "ssv",
           suggestedDisplayName: "ssv",
         });
