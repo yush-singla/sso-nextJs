@@ -28,7 +28,7 @@ export default function Home() {
         successCallback: (token) => {
           const testDetails = jwtDecode(token);
           console.log(testDetails);
-          axios.post("http://localhost:3000", { token }).then((response) => {
+          axios.post("http://localhost:5000", { token }).then((response) => {
             const customToken = response.data;
             firebase.initializeApp(firebaseConfig);
             firebase
