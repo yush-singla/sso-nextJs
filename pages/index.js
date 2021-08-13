@@ -26,6 +26,8 @@ export default function Home() {
       microsoftTeams.initialize();
       microsoftTeams.authentication.getAuthToken({
         successCallback: (token) => {
+          const testDetails = jwtDecode(token);
+          console.log(testDetails);
           axios.post("https://desolate-dusk-73432.herokuapp.com/", { token }).then((response) => {
             const customToken = response.data;
             firebase.initializeApp(firebaseConfig);
